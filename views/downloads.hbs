@@ -1,0 +1,92 @@
+<!-- Main content -->
+
+
+<div class="content-wrapper">
+
+  <!-- Page header -->
+  <div class="page-header page-header-light">
+    <div class="page-header-content header-elements-md-inline">
+      <div class="page-title d-flex">
+        <h4><i class="icon-home4"></i>
+          <span class="font-weight-semibold">Downloads</span></h4>
+        <a href="#" class="header-elements-toggle text-default d-md-none"><i
+            class="icon-more"
+          ></i></a>
+      </div>
+
+      <!-- <div class="header-elements d-none">
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+						</div>
+					</div> -->
+    </div>
+
+    <div
+      class="breadcrumb-line breadcrumb-line-light header-elements-md-inline"
+    >
+      <div class="d-flex">
+        <div class="breadcrumb">
+          <a href="/dashboard" class="breadcrumb-item"><i
+              class="icon-home4 mr-2"
+            ></i>
+            Dashboard</a>
+            <span class="breadcrumb-item active">Downloads</span>
+
+        </div>
+
+        <a href="#" class="header-elements-toggle text-default d-md-none"><i
+            class="icon-more"
+          ></i></a>
+      </div>
+
+         </div>
+  </div>
+  <!-- /page header -->
+
+  <!-- Content area -->
+  <div class="content">
+    {{! my statics  }}
+    <!-- Quick stats boxes -->
+    <div class="row  ">
+      
+	  <div class="col-lg-6 ">
+        <div class="card bg-teal-400 bg-info justify-content-center align-items-center">
+          <div class="card-body">
+            <div class="d-flex justify-content-center align-items-center">
+              <h3 class="font-weight-semibold mb-0">{{totalApk}}</h3>
+            </div>
+            <div >
+              Total Apks 
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div id="members-online"></div>
+          </div>
+        </div>
+	  </div>
+		<div class="col-lg-6">
+        <div class="card bg-teal-400 bg-info">
+          <div class="card-body text-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <h3 class="font-weight-semibold mb-0">{{downloads}}</h3>
+            </div>
+            <div>
+              Total Downloads 
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div id="members-online"></div>
+          </div>
+        </div>
+        <!-- /members online -->
+
+      </div>
+    
+    
+          </div>
+        </div>
+        <!-- /daily financials -->
+</div>
+<!-- /main content -->

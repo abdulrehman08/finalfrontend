@@ -1,0 +1,209 @@
+		<!-- Main content -->
+		<div class="content-wrapper">
+		<!-- Page header -->
+		<div class="page-header page-header-light">
+			<div class="page-header-content header-elements-md-inline">
+				<div class="page-title d-flex">
+					<h4><i class="icon-unfold mr-2"></i> <span class="font-weight-semibold">Apk's</span></h4>
+					<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+				</div>
+
+				<!-- <div class="header-elements d-none">
+					<div class="d-flex justify-content-center">
+						<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+						<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+						<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+					</div>
+				</div> -->
+			</div>
+
+			<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+				<div class="d-flex">
+					<div class="breadcrumb">
+						<a href="dashboard" class="breadcrumb-item"><i class="icon-home4 mr-2"></i> Dashboard</a>
+						<a href="products" class="breadcrumb-item">Apk List</a>
+						<span class="breadcrumb-item active">-  Add Product</span>
+					</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<!-- <div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+							<a href="#" class="breadcrumb-elements-item">
+								<i class="icon-comment-discussion mr-2"></i>
+								Support
+							</a>
+
+							<div class="breadcrumb-elements-item dropdown p-0">
+								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear mr-2"></i>
+									Settings
+								</a>
+
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<!-- /page header -->
+
+<!--Contant Area-->
+<section>
+
+    <div class="app-content content my-4 ">
+      <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+  
+        <div class="content-body">
+          <!-- Basic form layout section start -->
+          <section id="basic-form-layouts">
+            <div class="row match-height">
+  
+              <div class="offset-md-1 col-md-10">
+                <div class="card">
+                  <div class="card-content collapse show">
+                    <div class="card-body">
+                      
+                      <form onsubmit="" class="form" 
+                        enctype="multipart/form-data" accept-charset="ISO-8859-1">
+                        <div class="form-body">
+                          <h3 class="form-section"><b>
+                              <i class="ft-flag"></i>Add Apks</b></h3>
+                          <br>
+                          <div class="row">
+                            <div class="col-md-6 form-group">
+                              <label for=""><b>Title:</b></label>
+                              <input type="text" id="title" name="title" class="form-control" placeholder="Enter Title">
+                            </div>
+  
+                            <div class="col-md-6 form-group">
+                               <label for=""><b>Developer Name:</b></label>
+                              <input type="text" id="developer" name="developer" class="form-control"
+                                placeholder="Enter Developer Name">
+                           </div>
+  
+                            <div class="col-md-12 form-group">
+                             <label for=""><b>Image:</b></label>
+                              <input type="file" id="image" name="image" class="form-control">
+                           </div>
+
+							<div class="col-md-12 form-group">
+								<label for=""><b> Gallary Images:</b></label>
+								<input id="file-input" type="file" name="image" class="form-control" multiple>
+								<div class="m-1 p-1"  id="preview"></div>
+							  </div>
+                            <div class="col-md-12 form-group">
+                               <label for=""><b>Description</b>:</label>
+                              <textarea name="description" id="description" cols="30" rows="5" class="form-control"></textarea>
+                          </div>
+							<div class="col-md-6 form-group">
+								<label for=""><b>Tags:</b></label>
+								<input type="text" name="tag" id="tags" class="form-control"
+								  placeholder="Enter tags">
+							  </div>
+
+							  <div class="col-md-6 form-group">
+								  <label for=""><b>Version</b></label>
+                              <input type="text" id="version" class="form-control" placeholder="Version" name="version">
+                            </div>
+
+							<div class="col-md-6 form-group">
+								 <label for="category" ><b>Category</b></label>
+                              <select   name="category_id"   name="category" id="cat_id" class="form-control">
+                                <option >select ...</option>
+                              {{#each cate}}
+                                <option value={{this.title}} >
+                                  {{this.category}} 
+                                  </option>
+                                {{/each}}
+                              </select>
+              </div>
+							  <div class="col-md-6 form-group">
+								 <label for=""><b>Sub-Category</b></label>
+                              <select name="sub_category"  id="subcategory" class="form-control" onchange="onsubCateSelect()">
+                                <option value=""> select ...</option>
+                              </select>
+							  </div>
+                           
+                            <div class="col-md-6 form-group">
+                              <label for=""><b>Apk File</b></label>
+                              <input type="file" id="file" data-validation-allowing="apk"  name="file"
+                                class="form-control-file">
+                           </div>
+
+							<div class="col-md-6 form-group">
+								<label for=""><b>Requirements</b></label>
+								<input type="text" id="requirements" class="form-control" placeholder="Enter Requirnments"
+								  name="official_web">
+							  </div>
+                            <div class="col-md-3 form-group mt-2">
+                               <label for="feature"><b>Editor's Choice</b></label>
+                              <input type="checkbox" id="feature" class="" name="editor_choice" value="1">
+                            </div>
+                            <div class="col-md-2 form-group mt-2">
+                              <label for="trending"><b>Trending</b></label>
+                              <input type="checkbox" id="trending" class="" name="trending" value="1">
+                           </div>
+                           <div class="col-md-2 form-group mt-2">
+                              <label for="pre_register"><b>Hot</b></label>
+                              <input type="checkbox" id="hot" class="" name="pre_register" value="1">
+                            </div>
+                          <div class="col-md-2 form-group mt-2">
+                              <label for="pre_register">Top (App & Game)</label>
+                            <input type="checkbox" id="top" class="" name="pre_register" value="1">
+                            </div>
+  
+                            <!-- <div class="col-md-12 form-group">
+                              <label for="">Status</label>
+                              <select name="status" class="form-control">
+                              <option>Select Status...</option>
+  
+                              <option>Pending</option>
+                              <option>Confirm</option>
+                              <option>Reject</option>
+  
+                              </select>
+                            </div> -->
+  
+                          </div>
+  
+                        </div>
+  
+<p>Images uploading...</p>
+<progress style="width: 100%;height: 40px;" id="health1" value="0" max="100"></progress>
+<p>Apk file uploading...</p>
+<progress style="width: 100%;height: 40px;" id="health2" value="0" max="100"></progress>
+
+
+                        <div class="form-actions">
+                          <button type="button" onclick="addApk()" class="btn btn-primary float-right">
+                            <i class="la la-check-square-o"></i> Publish
+                          </button>
+						  </div>
+                        <div class="clearfix"></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- // Basic form layout section end -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+<!--Contant Area-->
+
+		</div>
+    	<!-- /page content -->
+	

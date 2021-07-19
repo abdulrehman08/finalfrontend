@@ -1,0 +1,79 @@
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-list-unordered mr-2"></i> <span class="font-weight-semibold">Categories</span></h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<!-- <div class="header-elements d-none">
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+							<a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+						</div>
+					</div> -->
+				</div>
+
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="dashboard" class="breadcrumb-item"><i class="icon-home4 mr-2"></i> Dashboard</a>
+							<a href="category" class="breadcrumb-item">All Categories</a>
+							<span class="breadcrumb-item active">- Add Category</span>
+					</div>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<!-- <div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+							<a href="#" class="breadcrumb-elements-item">
+								<i class="icon-comment-discussion mr-2"></i>
+								Support
+							</a>
+
+							<div class="breadcrumb-elements-item dropdown p-0">
+								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear mr-2"></i>
+									Settings
+								</a>
+
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<!-- /page header -->
+<!--Contant Area-->
+<section>
+    <div class="container">
+            <h1 class="mt-4">Add Category</h1>
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <form action="" method="POST" enctype="multipart/form-data">
+                 <label for="">Category Name:</label>
+                        <input type="text" id="newCate" name="category_name" class="form-control" placeholder="Enter Category Name"
+                            required>
+                        <label for="">Slug:</label>
+                        <textarea name="slug"  class="form-control" id="newSlug" cols="30" rows="5"></textarea>
+                        <br>
+                        <input type="button"   onclick="addCate()" value="Submit" class="btn btn-success float-right">
+                     </form>
+            </div>
+        </div>
+    </div>
+    </section> 
+<!--Contant Area-->
+		</div>
+		<!-- /main content -->
